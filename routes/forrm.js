@@ -3,7 +3,7 @@ var formModel = require('../model/form')
 
 router.get('/',async function (req, res) {
     await formModel.create(req.query)
-    res.send("You Enrolled Successfully!")
+    res.send("You Are Fire!")
 
 
     router.get('/record',async function (req, res) {

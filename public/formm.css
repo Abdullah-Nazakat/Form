@@ -2,3 +2,7 @@ body{
     background-color: #daefe9;
    
 }
+.a1{
+    display: flex;
+    justify-content: space-between;
+}

@@ -13,12 +13,13 @@ app.use("/api/form",formapi)
 app.use(express.static('public'));
  
 app.get("/",(req,res) =>{
-    res.render('formm')
+    res.render(__dirname+'/views/formm.ejs')
 });
 
 // app.get('/', (req,res)=>{res.send("Welcome")})
 
-mongoose.connect('mongodb+srv://AbdullahNazakat:qwerty123@cluster0.oivagye.mongodb.net/Form').then((res)=>{
+// mongoose.connect('mongodb+srv://AbdullahNazakat:qwerty123@cluster0.oivagye.mongodb.net/Form').then((res)=>{
+    mongoose.connect('mongodb://localhost:27017/Form').then((res)=>{
     console.log("Connected...")
 }).catch((err)=>{
     console.log(err.message)
