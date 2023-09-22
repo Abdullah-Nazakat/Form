@@ -18,7 +18,8 @@ app.get("/",(req,res) =>{
 
 // app.get('/', (req,res)=>{res.send("Welcome")})
 
-mongoose.connect('mongodb+srv://ali:ali@cluster1.ujfi07o.mongodb.net/Form?retryWrites=true&w=majority').then(()=>{
+// mongoose.connect('mongodb+srv://ali:ali@cluster1.ujfi07o.mongodb.net/Form?retryWrites=true&w=majority').then(()=>{
+    mongoose.connect('mongodb+srv://ali:ali@cluster1.ujfi07o.mongodb.net/Form?retryWrites=true&w=majority').then(()=>{
     console.log("Connected...")
 }).catch((err)=>{
     console.log("not connected "+err.message)
